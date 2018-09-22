@@ -13,7 +13,7 @@ if [ $? == 0 ]; then
   echo "Creating 'job' to refresh the ticket every 12 hours"
   while true; do /usr/bin/kinit -kt /etc/security/keytabs/pirulito.keytab <USER>@PIPOCA.DOMAIN -r7d; sleep 43200; done &
 else
-  echo "Error generating a ticket in Kerberos. Validate the settings."
+  echo "Error generating a ticket in Kerberos."
   exit 1
 fi
 
@@ -28,4 +28,4 @@ else
 fi
 
   echo "Starting $APP_NAME..."
-$DAEMON -Dplay.http.secret.key=c4br-dolphin -Dhttp.port=$APP_PORT
+$DAEMON -Dhttp.port=$APP_PORT
