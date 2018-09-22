@@ -6,6 +6,9 @@ Examples of Dockerfiles with Kerberos and other things
 ```
 $ docker build -t image .
 ```
+
+## GO
+```
 $  docker run -d --name some-application image
 ```
 
