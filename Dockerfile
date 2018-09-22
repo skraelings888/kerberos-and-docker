@@ -1,7 +1,7 @@
 FROM centos:centos7
 
 USER root
-## Instalando Kerberos     ##
+## Install Kerberos   ##
 RUN yum update -y && yum install -y krb5-libs krb5-auth-dialog krb5-workstation \
 sssd realmd adcli oddjob oddjob-mkhomedir openldap-clients pam_ldap nss-pam-ldapd cronie
 
