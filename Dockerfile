@@ -70,5 +70,5 @@ RUN chmod +x $APP_HOME/bin/$APP_NAME
 ## Switching to Application User ##
 USER <USER>
 
-## Dando inicio ao deploy
+## Start deploy
 CMD ["sh", "/opt/scripts/init-keytab.sh"]

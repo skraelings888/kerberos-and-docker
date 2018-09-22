@@ -1,4 +1,5 @@
 #!/bin/bash
+
 APP_DIR=/home/<USER>/${APP_NAME}
 TARGET=${APP_DIR}/${APP_NAME}
 PID_FILE=${APP_DIR}/RUNNING_PID

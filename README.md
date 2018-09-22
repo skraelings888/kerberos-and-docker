@@ -1,6 +1,10 @@
 ## kerberos-and-docker
 Examples of Dockerfiles with Kerberos and other things
 
+
+## Build image
+```
+$ docker build -t image .
 ```
 $  docker run -d --name some-application image
 ```
